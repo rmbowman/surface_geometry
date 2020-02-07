@@ -1,4 +1,4 @@
-*Note that this project isn't fully updated yet to reflect the paper. However, the example of how the code works will work using the example DEM. 
+> Note that this project isn't fully updated yet to reflect the paper. However, the example of how the code works will work using the example DEM. 
 
 # A geometric basis for surface habitat complexity and biodiversity
 
