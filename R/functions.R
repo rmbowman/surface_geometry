@@ -39,7 +39,7 @@ D_func <- function(H, R, L, L0) {
 
 # Main functions
 
-height_variation <- function(write=TRUE, return=FALSE) {
+height_variation <- function() {
 
   # Fractal dimension, D
   temp <- data.frame()
@@ -50,15 +50,9 @@ height_variation <- function(write=TRUE, return=FALSE) {
     # If you can't get multicore working, change "mcmapply" to "mapply" below:
     temp <- rbind(temp, data.frame(L0=s, x=x, y=y, H0=mcmapply(fd_func, x, y, s)))
   }
-  # This variation method is time-consuming, and so save the result to avoid reprocessing if recalculting RDH
-  if (write) {
-    write.csv(temp, paste0("output/", output, "/var_", names(data), "_", sprintf("%04d", rep), ".csv"), row.names=FALSE)
-  }
   print(paste0("Complete: ", names(data), "_", sprintf("%04d", rep)))
-  # You can return the data and assign to variable if wish
-  if (return) {
-    return(temp)
-  }
+
+  return(temp)
 }
 
 rdh <- function(height_variation) {

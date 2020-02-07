@@ -1,6 +1,6 @@
 # Reef record test
 source("R/functions.R")
-output <- "record"
+output <- "records"
 
 # Reef records
 files <- dir("data/records")
@@ -30,15 +30,15 @@ store <- data.frame()
 
 for (rec in files) {
   for (rep in 1:16) {
-    temp <- read.csv(paste0("output/variation/var_", names(data), "_", sprintf("%04d", rep), ".csv"), as.is=TRUE)
+    temp <- read.csv(paste0("output/records/var_", names(data), "_", sprintf("%04d", rep), ".csv"), as.is=TRUE)
     # Calculate rugosity, fractal dimension and height range (rdh)
     store <- rbind(store, data.frame(rec=rec, rep=rep, rdh(temp)))
   }
 }
-write.csv(store, paste0("output/record.csv"), row.names=FALSE)
+write.csv(store, paste0("output/records.csv"), row.names=FALSE)
 
 # 
-# dat <- read.csv("output/record.csv", as.is=TRUE)
+# dat <- read.csv("output/records.csv", as.is=TRUE)
 # 
 # 
 # par(mfrow=c(2, 2))
