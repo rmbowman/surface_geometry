@@ -5,7 +5,4 @@
 .DS_Store
 
 doc/
-
-data/trimodal
-data/records/*
-!data/records/rr201611_018_Resort_dem_low.tif
+data/
