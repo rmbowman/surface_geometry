@@ -2,9 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
-
-
 .DS_Store
 
-data/
 doc/
+
+data/trimodal
+data/records/*
+!data/records/rr201611_018_Resort_dem_low.tif
