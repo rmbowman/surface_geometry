@@ -1,3 +1,5 @@
+*Note that this project isn't fully updated yet to reflect the paper. However, the example of how the code works will work using the example DEM. 
+
 # A geometric basis for surface habitat complexity and biodiversity
 
 This GitHub repository provides code for the research posted currently at [bioRxiv](https://www.biorxiv.org/content/10.1101/2020.02.03.929521v1).
@@ -23,4 +25,8 @@ H | The height range (or height range at L)
 
 ### Reef records data
 
+TBD
+
 ### Trimodal data
+
+TBD
