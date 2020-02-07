@@ -5,5 +5,7 @@
 .DS_Store
 
 doc/
-data/
+data/records/
+data/trimodal/
+
 *.html
